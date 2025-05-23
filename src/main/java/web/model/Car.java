@@ -1,4 +1,4 @@
-package web.config.Model;
+package web.model;
 
 public class Car {
     private String carModel;

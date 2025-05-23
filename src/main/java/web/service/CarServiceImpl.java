@@ -1,16 +1,16 @@
-package web.config.Service;
+package web.service;
 
-import org.springframework.stereotype.Component;
-import web.config.Model.Car;
+import org.springframework.stereotype.Service;
+import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
-public class CarServiseImpl implements CarServise {
-    private List<Car> car;
+@Service
+public class CarServiceImpl implements CarService {
+    private final List<Car> car;
 
-    {
+    public CarServiceImpl() {
         car = new ArrayList<Car>();
 
         car.add(new Car("BMW", 2022,450));
